@@ -1,0 +1,31 @@
+.promo {
+    min-height: 100vh; /* ставиться для того не в незалежності від якого пристрою не сидим маленьки чи ні, висота секції мала висоту 100% екрану */
+    position: relative;
+    background: url('../img/main_bg.jpg') no-repeat 50%/cover; /* 50% ставиться щоб картинка стала нормально */
+    padding-top: 205px;
+    &__title {
+        margin-top: 10px;
+        width: 535px;
+    }
+    &__subtitle {
+        position: relative;
+        padding-left: 10px;
+        z-index: 2;
+        @include before_circle;
+    }
+    &__btns {
+        margin-top: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 250px;
+    }
+    &__link {
+        color: #000;
+        font-weight: bold;
+        &:hover {
+            color: #000;
+            text-decoration: none;
+        }            
+    }
+}
