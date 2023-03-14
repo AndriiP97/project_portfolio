@@ -49,7 +49,7 @@
         &-item {
             display: grid;
             grid-template: minmax(21px, auto) 14px / 200px 35px;
-            justify-content: space-between;
+            justify-content: space-between; /* якби не використували спейс бітвін в джастифан і елайн, то елементи не стали так гарно */
             align-content: space-between;
         }
         &-title {
