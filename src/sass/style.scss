@@ -8,6 +8,8 @@
 @import 'blocks/button';
 @import 'blocks/sidepanel';
 @import 'blocks/menu';
+@import 'blocks/about';
+@import 'blocks/resume';
 
 * {
     font-family: 'Poppins', sans-serif;
@@ -18,4 +20,11 @@
 .container {
     width: 1140px;
     margin: 0 auto;
+}
+
+.divider { /* щоб не створювати окремий блок для одного класу, то можна в стиль задати, а в 2 секції щоб не було мт 25 можна в файлі абоут прописати цей клас під дескр і завдати мт0 */
+    width: 60px;
+    height: 3px;
+    background-color: $main-color;
+    margin: 25px auto 0 auto;
 }
